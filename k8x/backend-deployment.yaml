@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: titanic
+      tier: backend
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: titanic
+        tier: backend
+    spec:
+      containers:
+        - name: backend
+          image: "docker.io/strobosco/dockerbeginning:titanicbackend"
+          ports:
+            - name: http
+              containerPort: 8080

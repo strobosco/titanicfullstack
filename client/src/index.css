@@ -1,0 +1,68 @@
+body {
+  background-color: #2B3145;
+  font-family: "San Francisco";
+}
+
+input {
+  margin-left: 20px;
+  float: right;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.titolo { 
+  position: relative;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 20px;
+  top: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.calcolo {
+  position: relative;
+  float: left;
+  background-color: white;
+  color: black;
+  width: 35%;
+  padding: 20px;
+  top: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+  margin-left: 44px;
+}
+
+.introduction {
+  margin-left: 18.5%;
+  width: 50%;
+  text-align: left;
+}
+
+.inputDescriptor {
+  text-align: left;
+}
+
+.calcola {
+  display:inline-block;
+  margin:  auto;
+  float: none;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border: none;
+  border-radius: 2em;;
+  box-sizing: border-box;
+  text-align:center;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color: #DDB992;
+  transition: all 0.2s;
+}
