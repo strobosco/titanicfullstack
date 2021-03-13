@@ -28,7 +28,7 @@ const Calcolo = () => {
             body: JSON.stringify(data)
         }
 
-        const res = await fetch("titanicbackendservice:8080", options)
+        const res = await fetch("http://titanicbackendservice.default.svc.cluster.local:8080", options)
         const resjson = await res.json()
 
         console.log(resjson.confirmation)
