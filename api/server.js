@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json(limit="1mb"));
 
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
 
     console.log("Request received")
 

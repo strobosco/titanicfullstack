@@ -1,0 +1,17 @@
+FROM node:14 as build-stage
+
+WORKDIR /usr/src/app
+
+COPY ../package*.json .
+
+RUN npm install
+
+COPY .. .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
+FROM nginx:1.19.0
+
+COPY --from=build-stage build/ /usr/share/nginx/html

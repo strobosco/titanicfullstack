@@ -23,12 +23,13 @@ const Calcolo = () => {
         const options = {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
             },
             body: JSON.stringify(data)
         }
 
-        const res = await fetch("http://titanicbackendservice.default.svc.cluster.local:8080", options)
+        const res = await fetch("/api", options)
         const resjson = await res.json()
 
         console.log(resjson.confirmation)
