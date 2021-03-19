@@ -12,6 +12,7 @@ This is a simple fullstack web app built with the intention of:
 
 ## Structure
 
-[api](api) -> folder containing the Node.js/Express api (contains only one route at this time).
-
-[client](client) -> folder containing the React frontend.
+| Codebase          |     Description     |
+| :------------     | :------------------ |
+| [api](api)        | Node/Express api    |
+| [client](client)  | React frontend      |
